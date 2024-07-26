@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
     return BlocBuilder<HomeCubit, CounterState>(builder: (context, state) {
       final countetCubit = HomeCubit.get(
           context); //get to know that context for BuildContext widget
-
+      print(state);
       return Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
